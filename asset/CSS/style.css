@@ -1,0 +1,274 @@
+/* inter-regular - cyrillic_latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/inter-v13-cyrillic_latin-regular.woff2') format('woff2');
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* inter-500 - cyrillic_latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/inter-v13-cyrillic_latin-500.woff2') format('woff2');
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* bona-nova-regular - cyrillic_latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Bona Nova';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/bona-nova-v10-cyrillic_latin-regular.woff2') format('woff2');
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* bona-nova-700 - cyrillic_latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Bona Nova';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/bona-nova-v10-cyrillic_latin-700.woff2') format('woff2');
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* Основа */
+
+body {
+  background: #34344E;
+  font-family: 'Inter';
+  font-size: 12px;
+  line-height: 16.80px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  text-decoration-style: none;
+}
+
+/* Header_wrapper | Шапка */
+
+.h-logo_wrapper {
+  display: inline-flex;
+  padding: 17px 20px 16px 20px;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.P {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.T,
+T:visited {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
+  text-transform: uppercase;
+  color: var(--white, #FFF);
+  font-variant-numeric: lining-nums proportional-nums;
+}
+
+.I {
+  display: flex;
+  width: 24px;
+  height: 24px;
+  justify-content: center;
+  align-items: center;
+  color: #F49C89;
+  margin: 0 10px 0 19px;
+}
+
+.tel {
+  text-decoration: none;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
+  text-transform: uppercase;
+  color: var(--white, #FFF);
+  margin: 0 19px 0 0;
+  font-variant-numeric: lining-nums proportional-nums;
+}
+
+.bur {
+  background: #00000000;
+  border: none;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 12px;
+}
+
+.sec1 {
+  padding: 0 20px;
+}
+
+.p1 {
+  font-family: 'Bona Nova';
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 110%;
+  text-transform: uppercase;
+  width: 320px;
+}
+
+.p2 {
+  font-family: 'Bona Nova';
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 110%;
+  text-transform: uppercase;
+  width: 216px;
+}
+
+.p3 {
+  font-family: 'Bona Nova';
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 110%;
+  text-transform: uppercase;
+  width: 292px;
+}
+
+.opis1 {
+  font-family: 'Inter';
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  text-transform: uppercase;
+}
+
+.test {
+  display: flex;
+  width: 320px;
+  padding: 13px 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 100px;
+  background: var(--peach, #F49C89);
+  font-family: 'Inter';
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: var(--white, #FFF);
+}
+
+/*Form*/
+        /* Общий div*/
+.div_form {
+  display: flex;
+  width: 320px;
+  padding-bottom: 0px;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+  border-radius: 10px;
+  background: var(--light-blue, #ECEEF8);
+}
+       /* Фото в общем div*/
+.form_img {
+  width: 320px;
+  height: 280px;
+  border-radius: 10px;
+  background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+}
+
+.form_div1 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+  width: 280px;
+  height: 90px;
+  gap: 15px;
+}
+
+.p_div_form {
+  color: var(--dark, #34344E);
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: 'Inter';
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
+  letter-spacing: -0.24px;
+  text-transform: uppercase;
+  align-self: stretch;
+  width: 280px;
+  height: 17px;
+}
+
+.form_label {
+  display: flex;
+  width: 130px;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+/* Radio */
+/* Скрытая используемая кнопка выбора*/ 
+
+.real_radio {
+  width: 0;
+  height: 0;
+  position: absolute;
+  opacity: 0;  /* непрозрачность для Firefox */
+}
+
+/*Кастомная показываемая кнопка*/
+
+.custom_radio {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background: #FFF;
+  border: 2px solid #F49C89;
+  border-radius: 50%;
+  margin-right: 10px;
+  vertical-align: text-top;
+  position: relative;
+}
+
+/*Нажатие|Кастомная показываемая кнопка*/
+
+.custom_radio::before {
+  content: '';
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  background: #F49C89;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.2s ease-in;  /*плавная анимация*/
+  display: none;
+}
+
+/*Привязка кастомной кнопки к используемой кнопки*/
+
+.real_radio:checked+.custom_radio::before {
+  display: inline-block;
+}

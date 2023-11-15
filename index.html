@@ -1,39 +1,43 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS/style.css">
-    <link rel="stylesheet" href="CSS/normalize.css">
-        <title>Tochka</title>
+    <link rel="stylesheet" href="asset/CSS/normalize.css">
+    <link rel="stylesheet" href="asset/CSS/style.css">
+    <link rel="stylesheet" href="asset/CSS/reset.css">
+    <title>Tochka</title>
 </head>
+
 <body>
     <header>
-    <div class="h-logo">
-        <img class="P" src="point.png" alt="название">
-        <a class="T" href="@">Tochka</a>
-        <img class="I" src="icon 01.png" alt="номер">
-        <a class="tel" href="tel:79091510870">+7 909 151-08-70</a>
-        <button class="bur">
-            <img src="burger.png" alt="меню">
-        </button>
-    </div>
+        <div class="h-logo_wrapper">
+            <img class="P" src="asset/image/point.png" alt="название">
+            <a class="T" href="@">Tochka</a>
+            <img class="I" src="asset/image/icon 01.png" alt="номер">
+            <a class="tel" href="tel:+79091510870">+7 909 151-08-70</a>
+            <button class="bur">
+                <img src="asset/image/burger.png" alt="меню">
+            </button>
+        </div>
+    </header>
     <section class="sec1">
         <p class="p1">Студия для онлайн-трансляций, </p>
         <p class="p2">видеосъемки </p>
         <p class="p3"> и записи подкастов</p>
-        <img class="art1" src="Rectangle 75.png" alt="арт1">
-        <img class="art2" src="Rectangle 76.png" alt="арт2">
+        <img class="art1" src="asset/image/Rectangle 75.png" alt="арт1">
+        <img class="art2" src="asset/image/Rectangle 76.png" alt="арт2">
         <p class="opis1">Съемочное пространство, оборудование и обслуживание от 3 900 ₽/час</p>
         <a class="test" href="#">Получить бесплатный тест-драйв</a>
     </section>
-    </header>
     <section>
         <h2>В нашей студии есть несколько зон с разным интерьером</h2>
         <div>
             <img src="#" alt="арт3">
             <p>Кастом</p>
-            <p>Большая студия с несколькими вариантами по сет-дизайну. Идеально подойдет для записи интервью, прямой трансляции и подкаста.</p>
+            <p>Большая студия с несколькими вариантами по сет-дизайну. Идеально подойдет для записи интервью, прямой
+                трансляции и подкаста.</p>
             <img src="#" alt="стоймость">
             <p>От 4 000 ₽/час</p>
             <a href="#">Подробнее о студии</a>
@@ -49,7 +53,8 @@
         <div>
             <img src="#" alt="арт3">
             <p>Вебинар</p>
-            <p>Небольшая студия с акцентом на проведение вебинаров и запись видеоуроков, с системой разноцветных фонов, прозрачной доской и теле-суфлером</p>
+            <p>Небольшая студия с акцентом на проведение вебинаров и запись видеоуроков, с системой разноцветных фонов,
+                прозрачной доской и теле-суфлером</p>
             <img src="#" alt="стоймость">
             <p>От 4 000 ₽/час</p>
             <a href="#">Подробнее о студии</a>
@@ -98,59 +103,142 @@
     </section>
     <section>
         <h2>Узнайте предварительную стоимость</h2>
-        <p>Работа команды, использование общей зоны, грим-пост и парковочные места включены в стоимость. Стоимость студии без сопровождения (команды) обсуждается индивидуально.</p>
-        <div>
-            <img src="#" alt="арт5">
-            <p>Выберите студию</p>
-            <input type="radio" name=" "> Кастом 
-            <input type="radio" name=" "> Подкаст
-            <input type="radio" name=" "> Вебинар 
-            <input type="radio" name=" "> 4 студия
-            <p>Продолжительность</p>
-            <input type="radio" name=" "> 1-2 часа 
-            <input type="radio" name=" "> 3 часа
-            <input type="radio" name=" "> 4 часа 
-            <input type="radio" name=" "> 5 и более
-            <p> Кол-во камер </p>
-            <input type="radio" name=" "> 1 камера 
-            <input type="radio" name=" "> 2 камеры
-            <input type="radio" name=" "> 3 камеры 
-            <input type="radio" name=" "> 4 камеры
-            <p> Кол-во героев в кадре </p>
-            <input type="radio" name=" "> 1 часа 
-            <input type="radio" name=" "> 3 часа
-            <input type="radio" name=" "> 2 часа 
-            <input type="radio" name=" "> 4 и более
-            <p> Тип услуги </p>
-            <input type="radio" name=" "> Запись
-            <input type="radio" name=" "> Стрим
-            <p> 15 000 ₽</p>
-            <p>Предварительная стоимость</p>
-            <a href="#">Забронировать студью</a>
-        </div>
+        <p>Работа команды, использование общей зоны, грим-пост и парковочные места включены в стоимость. Стоимость
+            студии без сопровождения (команды) обсуждается индивидуально.</p>
+        <form class="forma">
+            <div class="div_form">
+                <img src="asset/image/img_price.png" alt="арт5" class="form_img">
+                <div class="form_div1">
+                    <p class="p_div_form">Выберите студию</p>
+                    <label>
+                        <input type="radio" name="stud" value="1.1" class="real_radio">
+                        <span class="custom_radio"></span>
+                        Кастом
+                    </label>
+                    <label>
+                        <input type="radio" name="stud" value="1.2" class="real_radio">
+                        <span class="custom_radio"></span>
+                        Подкаст
+                    </label>
+                    <label>
+                        <input type="radio" name="stud" value="1.3" class="real_radio">
+                        <span class="custom_radio"></span>
+                        Вебинар
+                    </label>
+                    <label>
+                        <input type="radio" name="stud" value="1.4" class="real_radio">
+                        <span class="custom_radio"></span>
+                        4 студия
+                    </label>
+                </div>
+                <p>Продолжительность</p>
+                <label>
+                    <input type="radio" name="stud" value="2.1" class="real_radio">
+                    <span class="custom_radio"></span>
+                    1-2 часа
+                </label>
+                <label>
+                    <input type="radio" name="stud" value="2.2" class="real_radio">
+                    <span class="custom_radio"></span>
+                    3 часа
+                </label>
+                <label>
+                    <input type="radio" name="stud" value="2.3" class="real_radio">
+                    <span class="custom_radio"></span>
+                    4 часа
+                </label>
+                <label>
+                    <input type="radio" name="stud" value="2.4" class="real_radio">
+                    <span class="custom_radio"></span>
+                    5 и более
+                </label>
+                <p> Кол-во камер </p>
+                <label>
+                    <input type="radio" name="stud" value="3.1" class="real_radio">
+                    <span class="custom_radio"></span>
+                    1 камера
+                </label>
+                <label>
+                    <input type="radio" name="stud" value="3.2" class="real_radio">
+                    <span class="custom_radio"></span>
+                    2 камера
+                </label>
+                <label>
+                    <input type="radio" name="stud" value="3.3" class="real_radio">
+                    <span class="custom_radio"></span>
+                    3 камера
+                </label>
+                <label>
+                    <input type="radio" name="stud" value="3.4" class="real_radio">
+                    <span class="custom_radio"></span>
+                    4 камера
+                </label>
+                <p> Кол-во героев в кадре </p>
+                <label>
+                    <input type="radio" name="stud" value="4.1" class="real_radio">
+                    <span class="custom_radio"></span>
+                    1 часа
+                </label>
+                <label>
+                    <input type="radio" name="stud" value="4.1" class="real_radio">
+                    <span class="custom_radio"></span>
+                    1 часа
+                </label>
+                <label>
+                    <input type="radio" name="stud" value="4.2" class="real_radio">
+                    <span class="custom_radio"></span>
+                    3 часа
+                </label>
+                <label>
+                    <input type="radio" name="stud" value="4.3" class="real_radio">
+                    <span class="custom_radio"></span>
+                    2 часа
+                </label>
+                <label>
+                    <input type="radio" name="stud" value="4.4" class="real_radio">
+                    <span class="custom_radio"></span>
+                    4 и более
+                </label>
+                <p> Тип услуги </p>
+                <label>
+                    <input type="radio" name="stud" value="5.1" class="real_radio">
+                    <span class="custom_radio"></span>
+                    Запись
+                </label>
+                <label>
+                    <input type="radio" name="stud" value="5.1" class="real_radio">
+                    <span class="custom_radio"></span>
+                    Стрим
+                </label>
+                <p> 15 000 ₽</p>
+                <p>Предварительная стоимость</p>
+                <button type="submit">Забронировать студью</button>
+            </div>
+        </form>
     </section>
     <section>
         <h2>установлено новое съемочное оборудование и осветительные приборы</h2>
         <p>Нажмите на интересующее оборудование</p>
         <details>
             <summary><img src="#" alt="#">Видеокамеры Sony FX6 4K с ассортиментом оптики</summary>
-                    <img src="#" alt="#">
+            <img src="#" alt="#">
         </details>
         <details>
             <summary><img src="#" alt="#">Микрофоны Октава МК-105 и радиопетлички Sennheiser</summary>
-                    <img src="#" alt="#">
+            <img src="#" alt="#">
         </details>
         <details>
             <summary><img src="#" alt="#">Осветительные приборы</summary>
-                    <img src="#" alt="#">
+            <img src="#" alt="#">
         </details>
         <details>
-        <summary><img src="#" alt="#">Оборудование для поканальной записи и онлайн-трансляций</summary>
-                    <img src="#" alt="#">
+            <summary><img src="#" alt="#">Оборудование для поканальной записи и онлайн-трансляций</summary>
+            <img src="#" alt="#">
         </details>
         <details>
-        <summary><img src="#" alt="#">акустический паралон, бас-ловушки и диффузоры для правильной акустики</summary>
-                    <img src="#" alt="#">
+            <summary><img src="#" alt="#">акустический паралон, бас-ловушки и диффузоры для правильной акустики
+            </summary>
+            <img src="#" alt="#">
         </details>
     </section>
     <section>
@@ -175,16 +263,19 @@
     </section>
     <section>
         <h2>Возьмём всю организацию и технические заботы на себя</h2>
-        <p>В стоимость включена работа администратора, который поможет все подключить, записать подкаст или провести онлайн-трансляцию</p>
+        <p>В стоимость включена работа администратора, который поможет все подключить, записать подкаст или провести
+            онлайн-трансляцию</p>
         <p>после окончания проекта – загрузим исходники на файлообменник при необходимости</p>
         <a href="#">Забронировать</a>
     </section>
     <section>
         <h2>Закроем самые частые вопросы</h2>
         <h3>Какие Условия бронирования?</h3>
-        <p>Забронировать студию можно по предоплате 50%. Оплата безналом или по QR-коду на счет организации. При отмене бронирования позднее чем за 24 часа до начала, предоплата не возвращается.</p>
+        <p>Забронировать студию можно по предоплате 50%. Оплата безналом или по QR-коду на счет организации. При отмене
+            бронирования позднее чем за 24 часа до начала, предоплата не возвращается.</p>
         <h3>Есть Парковка?</h3>
-        <p>На территории есть 1 бесплатное парковочное место. В 2-х минутах пешком – платная городская парковка по 40 р/час, на которой всегда есть места.</p>
+        <p>На территории есть 1 бесплатное парковочное место. В 2-х минутах пешком – платная городская парковка по 40
+            р/час, на которой всегда есть места.</p>
     </section>
     <section>
         <h2>Свяжитесь с нами по любому вопросу</h2>
@@ -193,12 +284,12 @@
         <img src="#" alt="номер"> +7 909 151-08-70
         <a href="#"><img src="#" alt="телеграмм"></a>
         <a href="#"><img src="#" alt="вконтакте"></a>
-        <img src="#" alt="время"> Работаем с 8:00 до 22:00 
+        <img src="#" alt="время"> Работаем с 8:00 до 22:00
         <p>по предварительной записи</p>
         <img src="#" alt="адрес"> Москва, ул. Садовая-Каретная улица, 20с2
     </section>
     <footer>
-        <img src="#" alt="#"> 
+        <img src="#" alt="#">
         <h3>TOCHKA</h3>
         <a href="#">Студии</a>
         <a href="#">Кейсы</a>
@@ -209,11 +300,12 @@
         <a href="#"><img src="#" alt="wp"></a>
         <a href="#"><img src="#" alt="yt"></a>
         <a href="mailto:hello@tochkakontenta.ru">hello@tochkakontenta.ru</a>
-        <a href="tel:79091510870">+7 909 151-08-70</a>
-           <p>ООО «Стрим Парк», ОГРН 1187847305931</p>
-           <p>Политика конфиденциальности</p>
-           <p>Разработка сайта — Kate lazareva</p>
-           <a href="/grid/grid.html">GRID</a>
+        <a href="tel:+79091510870">+7 909 151-08-70</a>
+        <p>ООО «Стрим Парк», ОГРН 1187847305931</p>
+        <p>Политика конфиденциальности</p>
+        <p>Разработка сайта — Kate lazareva</p>
+        <a href="/grid/grid.html">GRID</a>
     </footer>
 </body>
+
 </html>

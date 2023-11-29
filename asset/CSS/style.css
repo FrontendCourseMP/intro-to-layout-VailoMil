@@ -20,27 +20,43 @@
   /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
-/* bona-nova-regular - cyrillic_latin */
 @font-face {
-  font-display: swap;
-  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Bona Nova';
-  font-style: normal;
-  font-weight: 400;
-  src: url('../fonts/bona-nova-v10-cyrillic_latin-regular.woff2') format('woff2');
-  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+	font-family: 'Steelfish';
+	src: url('SteelfishRg-Regular.woff2') format('woff2') url('SteelfishRg-Regular.woff') format('woff');
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Steelfish';
+	src: url('SteelfishRg-Italic.woff2') format('woff2') url('SteelfishRg-Italic.woff') format('woff');
+	font-weight: 400;
+	font-style: italic;
+}
+@font-face {
+	font-family: 'Steelfish';
+	src: url('SteelfishRg-Bold.woff2') format('woff2') url('SteelfishRg-Bold.woff') format('woff');
+	font-weight: 700;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Steelfish';
+	src: url('SteelfishRg-BoldItalic.woff2') format('woff2') url('SteelfishRg-BoldItalic.woff') format('woff');
+	font-weight: 700;
+	font-style: italic;
+}
+@font-face {
+	font-family: 'Steelfish';
+	src: url('SteelfishEb-Regular.woff2') format('woff2') url('SteelfishEb-Regular.woff') format('woff');
+	font-weight: 800;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Steelfish';
+	src: url('SteelfishEb-Italic.woff2') format('woff2') url('SteelfishEb-Italic.woff') format('woff');
+	font-weight: 800;
+	font-style: italic;
 }
 
-/* bona-nova-700 - cyrillic_latin */
-@font-face {
-  font-display: swap;
-  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Bona Nova';
-  font-style: normal;
-  font-weight: 700;
-  src: url('../fonts/bona-nova-v10-cyrillic_latin-700.woff2') format('woff2');
-  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
 
 /* Основа */
 
@@ -54,141 +70,14 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  padding: 0 20px;
 }
 
-/* Header_wrapper | Шапка */
-
-.h-logo_wrapper {
-  display: inline-flex;
-  padding: 17px 0px 16px 0;
-  justify-content: center;
-  align-items: flex-start;
+main {
+  padding: 0px 20px 0px 20px;
 }
 
-
-.logo_wrap {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.P {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.T,
-T:visited {
-  width: 61px;
-  height: 21px;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 140%;
-  text-transform: uppercase;
-  color: #FFF;
-  font-variant-numeric: lining-nums proportional-nums;
-}
-
-.telp_phone {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.I {
-  display: flex;
-  width: 24px;
-  height: 24px;
-  justify-content: center;
-  align-items: center;
-  color: #F49C89;
-  margin: 0 10px 0 19px;
-}
-
-.tel,
-tel:visited {
-  text-decoration: none;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 140%;
-  text-transform: uppercase;
-  color: #FFF;
-  margin: 0 19px 0 0;
-  font-variant-numeric: lining-nums proportional-nums;
-}
-
-.bur {
-  background: #00000000;
-  border: none;
-  flex-direction: column;
-  align-items: flex-end;
-  gap: 12px;
-}
 
 /* Секция первая*/
-
-.sec {
-  padding: 99px 0 145px 0px;
-  width: 360px;
-  height: 687px;
-  flex-shrink: 0;
-}
-
-.sec1 {
-  top: 140px;
-  left: 20px;
-  width: 320px;
-}
-
-.spec2 {
-  
-}
-
-.p1 {
-  font-family: 'Bona Nova';
-  font-size: 40px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 110%;
-  text-transform: uppercase;
-  width: 320px;
-}
-
-.p2 {
-  font-family: 'Bona Nova';
-  font-size: 40px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 110%;
-  text-transform: uppercase;
-  width: 216px;
-  padding: ;
-}
-
-.p3 {
-  font-family: 'Bona Nova';
-  font-size: 40px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 110%;
-  text-transform: uppercase;
-  width: 292px;
-}
-
-.opis1 {
-  width: 320px;
-  font-family: 'Inter';
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 140%;
-  text-transform: uppercase;
-  padding: 20px;
-}
 
 .test {
   display: flex;
@@ -224,12 +113,11 @@ tel:visited {
 .sec_1_img {
   height: 336.474px;
   align-self: stretch;
-  border-radius: 10px;
-  background: lightgray 50% / cover no-repeat;
+  background: url(<path-to-image>), lightgray 50% / cover no-repeat;
 }
         /*Общий текст.секция.2*/
 .sec_1_h {
-  font-family: 'Bona Nova';
+  font-family: 'Steelfish';
   font-size: 30px;
   font-style: normal;
   font-weight: 400;
@@ -238,6 +126,15 @@ tel:visited {
   text-transform: uppercase;
   color: var(--dark, #34344E);
   font-variant-numeric: lining-nums proportional-nums;
+}
+
+/*Общий див для второй секции*/
+.test1 {
+  display: flex;
+  width: 320px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
 }
 
 .sec_1_p {
@@ -259,6 +156,7 @@ tel:visited {
   align-items: flex-start;
   gap: 10px;
 }
+
 
 
 /*Form*/

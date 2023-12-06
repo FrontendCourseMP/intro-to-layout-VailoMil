@@ -26,6 +26,7 @@ a:hover  {
 aside, nav, footer, header, section, main {
 	FONT-WEIGHT: 200;
 	display: block;
+	padding: 0px 8px 0 8px;
 }
 
 h1, h2, h3, h4, h5, h6, p {

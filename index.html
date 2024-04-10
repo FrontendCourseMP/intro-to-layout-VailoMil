@@ -15,7 +15,9 @@
         <div class="head_main">
             <span class="logo"></span>
             <a class="head_text" href="@">Tochka</a>
+            <!-- Логотип всегда является ссылкой и картинкой внутри -->
             <span class="phone"></span>
+            <!-- Так значок телефона не делается, делается через ::before -->
             <a class="head_tel" href="tel:+79091510870">+7 909 151-08-70</a>
             <div id="menu">
                 <div id="menu-bar" onclick="menuOnClick()">
@@ -23,24 +25,30 @@
                   <span id="bar2" class="bar"></span>
                   <span id="bar3" class="bar"></span>
                 </div>
+                <!-- Просто вставь сюда SVG, и это кнопка, так как действие происходит в рамках страницы -->
               </div>
         </div>
     </header>
 
     <main>
         <section class="section_1">
+            <!-- А если секции местами поменяют? -->
             <div class="wrapper">
                 <div class="mobile_variant">
                     <p class="section_1__main-p">студия для онлайн-трансляций, <img class="sect_1-img_1" src="/asset/image/Se1_img1.png" alt="студия звукозаписи">
                     <span class="main-header__image-span"><img class="sect_1-img_2" src="/asset/image/Sec1_img2.jpg" alt=""> видеосъёмки</span>
                         <span> и записи подкастов</span></p>
+                    <!-- Делается одним h1 со спанами внутри -->
                     <div class="section__bottom">
                         <div class="section_1__block">
                             <a href="#" class="section_1__button">Получить бесплатный тест-драйв</a>
                         </div>
+                        <!-- Просто ссылка, div не нужен -->
                         <p class="section_1__sub-p">Съемочное пространство, оборудование <br> и обслуживание от 3 900 ₽/час</p>
+                        <!-- Должно быть перед ссылкой, ибо сперва делаем мобильную версию, потом поменяем местами, br не используем-->
                     </div>
                 </div>
+                
                 <div class="desctop_variant">
                     <p class="section_1__main-p">студия для онлайн-трансляций, 
                         <span class="main-header__image-span">видеосъёмки <img class="sect_1-img_1" src="/asset/image/Se1_img1.png" alt=""> <br>
@@ -53,6 +61,7 @@
                         <p class="section_1__sub-p">Съемочное пространство, оборудование <br> и обслуживание от 3 900 ₽/час</p>
                     </div>
                 </div>
+                <!-- Почему дублируется вообще? Это что вообще за чудо соцреализма? Дублирования быть не должно вообще, и тут оно не требуется, делается через order у flex-элементов -->
             </div>
         </section>
         <section class="test1">
@@ -69,6 +78,7 @@
                         записи интервью, прямой трансляции и подкаста.</p>
                     <p>
                         <span class="sec_1_price">Стоймость</span>
+                        <!-- Стоимость, без й -->
                         <span>От 4 000 ₽/час</span>
                     </p>
                     <a href="">Подробнее о студии</a>
@@ -149,6 +159,7 @@
                             <input type="radio" name="stud" value="1.1" class="real_radio">
                             <span class="custom_radio"></span>
                             Кастом
+                            <!-- Текст лучше брать в span для дальнейших манипуляций ниже такие ошибки тоже исправить -->
                         </label>
                         <label class="form_label">
                             <input type="radio" name="stud" value="1.2" class="real_radio">
@@ -166,6 +177,7 @@
                             4 студия
                         </label>
                     </div>
+                    <!-- Делается через fieldset, а не через div, заголовки через legend ниже такие ошибки тоже исправить -->
                     <p class="p_div_form">Продолжительность</p>
                     <div class="form_div1">
                         <label class="form_label">
@@ -309,11 +321,13 @@
             </ul>
             <a href="#">Получить тест-драйв</a>
             <img src="#" alt="арт6">
+            <!-- Ссылку и картинку взять в div, чтобы спозиционировать ссылку абсолютно -->
         </section>
         <section>
             <h2>Снято в нашей студии</h2>
             <img src="@" alt="">
             <img src="@" alt="">
+            <!-- список -->
         </section>
         <section>
             <h2>
@@ -348,12 +362,18 @@
             </h2>
             <img src="#" alt="карта">
             <img src="#" alt="почта"> hello@tochkakontenta.ru
+            <!-- Ссылка должна быть с mailto, картинка почты через ::before -->
             <img src="#" alt="номер"> +7 909 151-08-70
+            <!-- Ссылка должны быть с tel, картинка телефона через ::before -->
             <a href="#"><img src="#" alt="телеграмм"></a>
+            <!-- Добавить внутрь скрытый текст с классом rs-only -->
             <a href="#"><img src="#" alt="вконтакте"></a>
+            <!-- Добавить внутрь скрытый текст с классом rs-only -->
             <img src="#" alt="время"> Работаем с 8:00 до 22:00
             <p>по предварительной записи</p>
+            <!-- Взять в p, картинка делается через ::before -->
             <img src="#" alt="адрес"> Москва, ул. Садовая-Каретная улица, 20с2
+            <!-- Взять в p, картинка делается через ::before -->
         </section>
     </main>
 
@@ -361,6 +381,7 @@
         <div class="wrapper">
             <div class="footer-links">
                 <img src="img/logo.svg" alt="логотип" class="logo">
+                <!-- Ссылка -->
                 <ul class="links">
                     <li class="footer_item"><a href="#" class="footer_link">студии</a>  <a href="#" class="footer_link">кейсы</a></li>
                     <li class="footer_item"><a href="#" class="footer_link">Тест-драйв</a>  <a href="#" class="footer_link">Контакты</a></li>
@@ -368,6 +389,7 @@
                         <a href="#" class=""><img src="img/socials (1).svg" alt="иконка vk"></a> <a href="#" class=""><img src="img/socials (2).svg" alt="иконка youtube"></a></li>
                     <li class="footer_item"><a href="#" class="footer_link">hello@tochkakontenta.ru</a></li>
                     <li class="footer_item"><a href="#" class="footer_link">+7 909 151-08-70</a></li>
+                    <!-- Намешал коней, людей, лапшу и соцреализм. Один список - первые четые, потом отдельный список - соцсети, отдельно контакты ссылками почты и телефона -->
                 </ul>
             </div>
             <div class="politics">
@@ -378,6 +400,7 @@
         </div>
     </footer>
     <script src="/asset/CSS/script.js"></script>
+    <!-- И зачем он тут? -->
 </body>
 
 </html>

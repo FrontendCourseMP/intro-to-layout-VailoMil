@@ -420,6 +420,144 @@ ul {
 }
 
 
+/*-----------------Section3------------------*/
+
+.studio-card__oneline {
+  display: flex;
+  justify-content: space-between;
+}
+
+.studio-composition__title {
+  color: #ECEEF8;
+  font-family: 'Steelfish', sans-serif;
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 110%;
+  text-transform: uppercase;
+  margin-top: 85px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 30px;
+  white-space: nowrap;
+}
+
+.studio-composition__title--right {
+  display: block;
+  margin-left: 57px;
+}
+
+.studio-composition__list {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 20px;
+  margin: 0;
+  overflow: auto;
+}
+
+.studio-composition__studio-zone {
+  position: relative;
+  border-radius: 10px;
+  width: 261px;
+  height: 410px;
+  margin-right: 10px;
+}
+
+.studio-zone__img {
+  border-radius: 10px;
+  height: 261px;
+  width: 261px;
+  object-fit: cover;
+}
+
+.studio-zone__title {
+  color: #242433;
+  font-family: 'Steelfish', sans-serif;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 110%;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  margin-top: 18px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 0;
+}
+
+.studio-zone__text {
+  color: #242433;
+  font-family: 'Inter', sans-serif;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: -0.24px;
+  text-transform: uppercase;
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+
+}
+
+.studio-zone--addition {
+  background-color: #fd6948e0;
+}
+
+.studio-zone__title--addition {
+  color: #FFF;
+  font-family: 'Steelfish', sans-serif;
+  font-size: 4.2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 110%;
+  letter-spacing: 0.84px;
+  text-transform: uppercase;
+  margin: 18px 20px;
+}
+
+
+.studio-zone__list--addition {
+  margin-top: 15px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 40px;
+}
+
+.description {
+  margin-bottom: 10px;
+}
+
+.description__text {
+  color: #FFF;
+  font-family: 'Inter', sans-serif;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: -0.6px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.studio-zone__link {
+  display: block;
+  color: #FFF;
+  font-family: 'Inter', sans-serif;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
+  letter-spacing: -0.6px;
+  text-transform: uppercase;
+  border-radius: 100px;
+  padding: 14px 36px;
+  text-align: center;
+  background-color: var(--first_color);
+  text-decoration: none;
+  margin: 10px;
+}
+
 
 /*-----------------Form-----------------*/
 /* Общий div*/

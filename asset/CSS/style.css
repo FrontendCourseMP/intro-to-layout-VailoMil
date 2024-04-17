@@ -116,10 +116,27 @@ header {
 }
 
 .header__list {
-  gap: 27px;
-  margin-top: 10px;
   display: none;
-}
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #F49C89;
+  padding: 10px;
+  border: 1px solid #F49C89;
+  z-index: 100;
+  transition: 0.3s ease-in-out;
+  transform: translateY(-10px);
+  }
+
+  .menu-open {
+    display: block;
+    transform: translateX(0%);
+    left: 100px;
+  }
+
+  .header__burger.menu-open {
+    background-color: #F49C89;
+  }
 
 .header__burger {
   background-color: transparent;
@@ -1099,4 +1116,16 @@ footer {
     top: 500px;
     left: 909px;
   }
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
 }

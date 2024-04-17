@@ -1,5 +1,14 @@
-function menuOnClick() {
-    document.getElementById("menu-bar").classList.toggle("change");
-    document.getElementById("nav").classList.toggle("change");
-    document.getElementById("menu-bg").classList.toggle("change-bg");
-  }
+document.addEventListener('DOMContentLoaded', function() {
+  const burgerBtn = document.querySelector('.header__burger');
+  const menuList = document.querySelector('.header__list');
+
+  burgerBtn.addEventListener('click', function() {
+    menuList.classList.toggle('menu-open');
+    burgerBtn.classList.toggle('menu-open'); // Добавляем или удаляем класс для изменения стилей кнопки бургера
+    if (menuList.classList.contains('menu-open')) {
+      const burgerRect = burgerBtn.getBoundingClientRect();
+      menuList.style.left = burgerRect.left + 'px';
+      menuList.style.top = burgerRect.bottom + 'px';
+    }
+  });
+});

@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   burgerBtn.addEventListener('click', function() {
     menuList.classList.toggle('menu-open');
-    burgerBtn.classList.toggle('menu-open'); // Добавляем или удаляем класс для изменения стилей кнопки бургера
+    burgerBtn.classList.toggle('menu-open');
     if (menuList.classList.contains('menu-open')) {
       const burgerRect = burgerBtn.getBoundingClientRect();
       menuList.style.left = burgerRect.left + 'px';

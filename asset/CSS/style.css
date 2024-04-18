@@ -739,6 +739,10 @@ header {
   margin-bottom: 30px;
 }
 
+.dop__h2 {
+  text-transform: uppercase;
+}
+
 .our-responsibility-top h2 span {
   margin-left: 57px;
   color: var(--main);
@@ -974,6 +978,10 @@ footer {
     position: absolute;
     top: 0;
     left: 0;
+}
+
+.dop__h2{
+  text-transform: uppercase;
 }
 
   .hero__main-p span {

@@ -36,7 +36,7 @@ ul {
 }
 
 :root {
-  --peach: #fd6941e0;
+  --peach: #F49C89;
   --main-text: #fff;
   --main:  #34344E;
   --text-second: #FFF;
@@ -167,6 +167,8 @@ header {
 .hero {
   padding: 82px 0 145px;
   background-color: var(--main);
+  background-image: url('/asset/image/Vector\ 1.png');
+  background-size: cover;
 }
 
 .hero__main-p {
@@ -260,6 +262,11 @@ header {
   letter-spacing: 1px;
   position: relative;
   font-weight: bold;
+}
+
+.studio-zones {
+  background-image: url('/asset/image/Vector\ 1.png');
+  background-size: cover;
 }
 
 .studio-zones__span-1 {
@@ -361,6 +368,8 @@ header {
 .facilities {
   margin-top: 85px;
   margin-bottom: 57px;
+  background-image: url('/asset/image/Vector\ 1.png');
+  background-size: cover;
 }
 
 .facilities h2 {
@@ -393,7 +402,7 @@ header {
 
 .facilities__list li img {
   max-width: 100%;
-  aspect-ratio: 1/1;
+  F: 1/1;
   object-fit: cover;
 }
 
@@ -548,6 +557,8 @@ header {
 
 .equipment {
   padding-top: 38px;
+  background-image: url('/asset/image/Vector\ 1.png');
+  background-size: cover;
 }
 
 .equipment summary {

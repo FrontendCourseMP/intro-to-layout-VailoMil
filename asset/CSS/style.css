@@ -85,6 +85,18 @@ header {
   background-color: var(--main);
 }
 
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
 
 .header__link {
   color: var(--text-second);
@@ -468,11 +480,11 @@ header {
   height: 24px;
   top: -4px;
   left: -34px;
-  background: url('../img/radio-btns.svg') 0 0 no-repeat;
+  background: url('/asset/image/radio-btns.svg') 0 0 no-repeat;
 }
 
 .form__list li input[type=radio]:checked+label:before {
-  background: url('../img/radio-btns-ch.svg') 0 0 no-repeat;
+  background: url('/asset/image/radio-btns-ch.svg') 0 0 no-repeat;
 }
 
 .form__list li {
@@ -952,7 +964,17 @@ footer {
 
   .mobile_variant {
     display: none;
+    position: relative;
   }
+
+  .mobile_variant_img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
 
   .hero__main-p span {
     margin-left: 150px;
@@ -1116,16 +1138,4 @@ footer {
     top: 500px;
     left: 909px;
   }
-}
-
-.sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
-  border-width: 0;
 }
